@@ -14,17 +14,17 @@
 
 5.  Используйте async / await. Необходимо организовать цепочку промисов внутри асинхронной функции getResult.
 
-        async function getResult() { тут должна быть цепочка вызовов }
+    async function getResult() { тут должна быть цепочка вызовов }
 
-        :black_square_button: Функции getUserInfo, getUserAvatar, getUserAdditionalInfo необходимо переписать в стиле async. Вместо setTimeout нужно использовать функцию delay которую написали в предыдущем задании (вызывать ее нужно через async await).
-        ​​
-        :black_square_button: Загрузить данные пользователя используем функцию getUserInfo.
+    :black_square_button: Функции getUserInfo, getUserAvatar, getUserAdditionalInfo необходимо переписать в стиле async. Вместо setTimeout нужно использовать функцию delay которую написали в предыдущем задании (вызывать ее нужно через async await).
+    ​​
+    :black_square_button: Загрузить данные пользователя используем функцию getUserInfo.
 
-        :black_square_button:Затем получить ссылку на аватар пользователя, для этого нужно использовать функцию getUserAvatar. Данная функция расширит и вернет обьект пользователя.
+    :black_square_button:Затем получить ссылку на аватар пользователя, для этого нужно использовать функцию getUserAvatar. Данная функция расширит и вернет обьект пользователя.
 
-        :black_square_button:Затем получить дополнительную информацию по пользователю, для этого нужно использовать функцию getUserAdditionalInfo. Данная функция расширит и вернет обьект пользователя.
+    :black_square_button:Затем получить дополнительную информацию по пользователю, для этого нужно использовать функцию getUserAdditionalInfo. Данная функция расширит и вернет обьект пользователя.
 
-        В конце вывести в консоль финальную версию полученного обьекта.
+    В конце вывести в консоль финальную версию полученного обьекта.
 
     ```function getUserInfo() {
     return new Promise(function (resolve, reject) {
@@ -46,21 +46,21 @@
     }
     ```
 
-Пример использования:
+    Пример использования:
 
-```async function getResult() {
-тут должна быть цепочка вызовов
-}
-getResult();
-```
+    ```async function getResult() {
+    тут должна быть цепочка вызовов
+    }
+    getResult();
+    ```
 
-6. Используйте async / await. Необходимо добавить обработку ошибок. Ошибка должна быть выведена в консоль.
-   ```async function getUser() {
-   return { name: 'Vic', age: 21, id: 1 };
-   }
-   async function getInfo() {
-   let user = await getUser();
-   throw new Error('error');
-   }
-   getInfo();
-   ```
+6.  Используйте async / await. Необходимо добавить обработку ошибок. Ошибка должна быть выведена в консоль.
+    ```async function getUser() {
+    return { name: 'Vic', age: 21, id: 1 };
+    }
+    async function getInfo() {
+    let user = await getUser();
+    throw new Error('error');
+    }
+    getInfo();
+    ```
