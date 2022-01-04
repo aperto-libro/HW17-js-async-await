@@ -8,7 +8,7 @@ function delay(data, ms) {
   });
 }
 
-delay({ name: 'user' }, 1000).then((data) => console.log('Hello!', data));
+delay({ name: 'Vic' }, 1000).then((data) => console.log('Hello,', data.name));
 
 // ------------- # 5
 
